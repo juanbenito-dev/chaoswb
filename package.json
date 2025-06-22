@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node --env-file=.env ./bin/www"
+    "start": "node --env-file-if-exists=.env ./bin/www"
   },
   "dependencies": {
     "compression": "^1.8.0",
@@ -12,8 +12,5 @@
     "express": "~4.16.1",
     "morgan": "~1.9.1",
     "pg-promise": "^11.14.0"
-  },
-  "engines": {
-    "node": ">=22.16.0"
   }
 }
