@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaos Within Chaos Beyond</title>
+    <link
+      rel="preload"
+      href="./fonts/emulogic.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+  </head>
+  <body>
+    <canvas id="gameHUD" width="448" height="85"> </canvas>
+
+    <canvas id="gameScreen" width="448" height="256"> </canvas>
+
+    <audio id="mainMenuMusic">
+      <source src="./sounds/mainMenuMusic.wav" type="audio/wav" />
+      <source src="./sounds/mainMenuMusic.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="storyMusic">
+      <source src="./sounds/storyMusic.wav" type="audio/wav" />
+      <source src="./sounds/storyMusic.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="highScoresMusic">
+      <source src="./sounds/highScoresMusic.wav" type="audio/wav" />
+      <source src="./sounds/highScoresMusic.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="levelMusic">
+      <source src="./sounds/levelMusic.wav" type="audio/wav" />
+      <source src="./sounds/levelMusic.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="gameOverMusic">
+      <source src="./sounds/gameOverMusic.wav" type="audio/wav" />
+      <source src="./sounds/gameOverMusic.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="gameWonMusic">
+      <source src="./sounds/gameWonMusic.wav" type="audio/wav" />
+      <source src="./sounds/gameWonMusic.mp3" type="audio/mpeg" />
+    </audio>
+
+    <audio id="orbThrowSound">
+      <source src="./sounds/orbThrow.wav" type="audio/wav" />
+    </audio>
+    <audio id="jumpSound">
+      <source src="./sounds/jump.wav" type="audio/wav" />
+    </audio>
+    <audio id="potionCollectionSound">
+      <source src="./sounds/potionCollection.wav" type="audio/wav" />
+    </audio>
+    <audio id="hammerHitSound">
+      <source src="./sounds/hammerHit.wav" type="audio/wav" />
+    </audio>
+    <audio id="lifePointLostSound">
+      <source src="./sounds/lifePointLost.wav" type="audio/wav" />
+    </audio>
+    <audio id="checkpointReachedSound">
+      <source src="./sounds/checkpointReached.wav" type="audio/wav" />
+    </audio>
+    <audio id="orbExplosionSound">
+      <source src="./sounds/orbExplosion.wav" type="audio/wav" />
+    </audio>
+    <audio id="changeMenuSelectionSound">
+      <source src="./sounds/changeMenuSelection.wav" type="audio/wav" />
+    </audio>
+    <audio id="confirmSelectionSound">
+      <source src="./sounds/confirmSelection.wav" type="audio/wav" />
+    </audio>
+    <audio id="witchLaughSound">
+      <source src="./sounds/witchLaugh.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script type="module" src="./javascripts/game.js"></script>
+  </body>
+</html>
