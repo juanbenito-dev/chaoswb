@@ -91,6 +91,8 @@ export default {
   closedDoorsNotice: "",
   closedDoorsNoticeTimer: {},
 
+  isPlayerPressingJumpKey: false,
+
   // |||||||||||| VARIABLES TO MANAGE THE EVENT OF FLYING FAST WORMS IN THE SECOND LEVEL
   doFastWormsFly: false,
   fastWormsFlyingStateTimer: {},

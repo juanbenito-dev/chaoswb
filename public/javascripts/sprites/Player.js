@@ -21,7 +21,7 @@ export default class Player extends Character {
     collisions,
     lifePoints,
     afterAttackLeeway,
-    checkpoints,
+    checkpoints
   ) {
     super(
       id,
@@ -34,7 +34,7 @@ export default class Player extends Character {
       hitBox,
       collisions,
       lifePoints,
-      afterAttackLeeway,
+      afterAttackLeeway
     );
 
     this.isLeftwardsHandToHandAttackEffective = false;
@@ -170,6 +170,9 @@ export default class Player extends Character {
     this.physics.vy += this.physics.ay * globals.deltaTime;
 
     if (this.physics.isOnGround && globals.action.jump) {
+      globals.action.jump = false;
+      globals.isPlayerPressingJumpKey = true;
+
       this.physics.isOnGround = false;
 
       // |||||||| ASSIGN INITIAL JUMP VELOCITY

@@ -148,7 +148,7 @@ function makeHellBatsAppearDueToRageBeingOver75() {
           hellBatHandToHandSpritesAttributes[i].vLimit,
           hellBatHandToHandSpritesAttributes[i].omega,
           hellBatHandToHandSpritesAttributes[i].yRef,
-          hellBatHandToHandSpritesAttributes[i].amplitude,
+          hellBatHandToHandSpritesAttributes[i].amplitude
         );
       }
     }
@@ -205,7 +205,10 @@ function keydownHandler(event) {
       break;
 
     case Key.JUMP:
-      globals.action.jump = true;
+      if (!globals.isPlayerPressingJumpKey) {
+        globals.action.jump = true;
+        globals.isPlayerPressingJumpKey = true;
+      }
       break;
 
     case Key.LEFT:
@@ -251,6 +254,7 @@ function keyupHandler(event) {
 
     case Key.JUMP:
       globals.action.jump = false;
+      globals.isPlayerPressingJumpKey = false;
       break;
 
     case Key.LEFT:
