@@ -63,7 +63,8 @@ function shrinkCanvasForPlayingGameState() {
   const canvasOriginalHeight = 256;
 
   globals.canvasHUD.style.display = "block";
-  globals.canvas.style.height = "640px";
+  globals.canvasHUD.style.height = "25vh";
+  globals.canvas.style.height = "calc(75vh + 5px)";
   globals.canvas.height = canvasOriginalHeight;
 }
 
@@ -75,7 +76,7 @@ function enlargeCanvasForMenus() {
   const canvasHUDOriginalHeight = 85;
 
   globals.canvasHUD.style.display = "none";
-  globals.canvas.style.height = "auto";
+  globals.canvas.style.height = "100vh";
   globals.canvas.height = canvasOriginalHeight + canvasHUDOriginalHeight;
 }
 
