@@ -787,14 +787,17 @@ function drawLoadingLevel() {
 
   let levelNumber;
   let introductoryTxt;
-  let introductoryTxtLineYCoordinate;
+  const introductoryTxtLineYCoordinate = 219;
 
   if (globals.level.number === 1) {
     renderNBackgroundImg(globals.loadingLevel1BackgroundImg);
 
     levelNumber = 1;
-    introductoryTxt = ["READY TO MEET THE REAL HELL?", "GOOD LUCK..."];
-    introductoryTxtLineYCoordinate = 246;
+    introductoryTxt = [
+      "KEEP AN EYE ON THE RAGE BAR,",
+      "BECAUSE AS IT FILLS UP,",
+      "UNDESIRABLE THINGS START TO HAPPEN...",
+    ];
   } else {
     renderNBackgroundImg(globals.loadingLevel2BackgroundImg);
 
@@ -804,7 +807,6 @@ function drawLoadingLevel() {
       "WELL, WHAT COMES NEXT WON'T BE EITHER,",
       "BUT I TRUST YOU. LET'S KICK SOME ASS.",
     ];
-    introductoryTxtLineYCoordinate = 219;
   }
 
   renderLoadingLevelNTxt(
